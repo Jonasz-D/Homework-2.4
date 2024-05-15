@@ -2,9 +2,6 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.parse, mimetypes, pathlib, socket, json, threading
 from datetime import datetime
 
-import os
-os.chdir(r'C:\Users\jp120\Desktop\Projects-Git\module_2\Homework-2.4\Homework-2.4\front-init')
-print(os.getcwd())
 
 class HttpHandler(BaseHTTPRequestHandler):
     def do_GET(self):
